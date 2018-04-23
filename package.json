@@ -1,0 +1,78 @@
+{
+  "name": "031",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js --quiet",
+    "start": "npx webpack-dev-server --mode development --open --config webpack.dev.js",
+    "build": "npx webpack --mode production --config webpack.prod.js",
+    "watch": "webpack --watch",
+    "format": "prettier --write --single-quote --print-width=120 --tab-width=2 \"**/*.js\"",
+    "browsers": "npx browserslist"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    ">1% in GB"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              ">1% in GB"
+            ]
+          },
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "module-to-cdn": "^3.1.2"
+  },
+  "devDependencies": {
+    "dynamic-cdn-webpack-plugin": "^4.0.0-rc.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "normalize.css": "^8.0.0",
+    "postcss-cli": "^5.0.0",
+    "autoprefixer": "^8.3.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browserslist": "^3.2.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-compat": "^2.2.0",
+    "eslint-plugin-import": "^2.11.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
+    "postcss-load-config": "^1.2.0",
+    "postcss-loader": "^2.1.4",
+    "postcss-normalize": "^4.0.0",
+    "postcss-preset-env": "^4.0.0",
+    "prettier": "^1.12.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.0.0",
+    "webpack-clean": "^1.0.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3",
+    "webpack-merge": "^4.1.2"
+  }
+}
